@@ -1,0 +1,16 @@
+---
+title: Test page with a third-party css and script
+modified: 2025-02-17
+css:
+- href: https://cdnjs.cloudflare.com/ajax/libs/animations/2.1/css/animations.min.css
+  integrity: sha512-tqoI91MZ3oeoSpcLLvyF9Z36ZJHbUmQL15XXmfSvN6i+JZgzw9V1jKpYtDblDBrQKNIsE/dryptIW+7wi739IQ==
+script: 
+- src: https://cdnjs.cloudflare.com/ajax/libs/animations/2.1/js/animations.min.js
+  integrity: sha512-Jb1xPasilz4CRWpHF6CQPrVq8ar/oOGD+IYRc02srqssq/X4jdGb4tEq2mklHHiS3SKpFzU8RerqdbGhQGFomQ==
+---
+
+<p>This page includes a third-party plugin with a mix of CSS and JavaScript through front matter with <code>css</code> and <code>script</code> option. As a result, you should see the words <strong>Hello world</strong> fading in below on page load.</p>
+
+<div class="well">
+	<p id="example" class="animating fade-in">Hello world</p>
+</div>
